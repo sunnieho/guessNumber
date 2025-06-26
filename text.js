@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const npcImages = [
     '/images/npc1.jpg',
     '/images/npc2.jpg',
@@ -90,3 +91,6 @@ input.addEventListener("keydown", function (e) {
 guessButton.addEventListener("click", makeGuess);
 
 resetGame();
+=======
+
+>>>>>>> a122660528e303dc459b3e24d071a04925db18cd
