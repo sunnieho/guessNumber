@@ -49,6 +49,7 @@ body {
     height: 500px;
     background-size: cover;
     background-position: center;
+    border: 2px solid #ccc; /* 👈 加這行觀察圖片是否顯示 */
   }
 
   .dialogue-box {
