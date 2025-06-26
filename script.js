@@ -1,9 +1,9 @@
 const npcImages = [
-    '/images/npc1.jpg',
-    '/images/npc2.jpg',
-    '/images/npc3.jpg',
-    '/images/npc4.jpg',
-    '/images/npc5.jpg',
+    'images/npc1.jpg',
+    'images/npc2.jpg',
+    'images/npc3.jpg',
+    'images/npc4.jpg',
+    'images/npc5.jpg',
 ]
 
 const bgMusic = document.getElementById("bgMusic");
