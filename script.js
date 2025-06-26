@@ -70,7 +70,7 @@ function updateHearts() {
 
 function resetGame() {
     secret = Math.floor(Math.random() * 20) + 1;
-    hearts = 20;
+    hearts = 6;
     npcStage = 0;
     input.disabled = false;
     input.value = '';
