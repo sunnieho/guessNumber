@@ -68,6 +68,18 @@ function updateHearts() {
     heartsDiv.innerHTML = '❤️'.repeat(hearts);
 }
 
+let hasPlayedMusic = false;
+
+guessButton.addEventListener("click", () => {
+    if (!hasPlayedMusic) {
+        bgMusic.muted = false;
+        bgMusic.volume = 0.3;
+        bgMusic.play().catch(e => console.log("無法自動播放音樂"));
+        hasPlayedMusic = true;
+    }
+    makeGuess();
+});
+
 function resetGame() {
     secret = Math.floor(Math.random() * 20) + 1;
     hearts = 6;
@@ -78,7 +90,6 @@ function resetGame() {
     updateNPC();
     updateHearts();
     updateLanguage();
-    bgMusic.play().catch(e => console.log("無法自動播放音樂"));
 }
 
 function endGame(message) {
@@ -134,7 +145,5 @@ input.addEventListener("keydown", function (e) {
         makeGuess();
     }
 });
-
-guessButton.addEventListener("click", makeGuess);
 
 resetGame();
